@@ -1,30 +1,27 @@
 # hermes-skills
 
-Wesley's reusable Hermes Agent skills — published as a custom Skills Hub tap.
+Publication is paused while provenance is rebuilt.
 
-## Install (one skill)
+The initial import incorrectly treated locally installed skills as Wesley-authored work. That import has been removed. There are currently no installable skills in this repository.
 
-```bash
-hermes skills install wesleymatosdev/hermes-skills/skills/<category>/<skill-name>
-```
+Future publication rules:
 
-## Install as a tap (browse + install any of them)
+- publish only skills authored here or materially derived here;
+- preserve upstream authorship and license for every derived skill;
+- link to verbatim third-party skills instead of republishing them;
+- keep authored skills separate from recommended external skills;
+- verify provenance, PII, secrets, package structure, and installation before release.
 
-```bash
-hermes skills tap add wesleymatosdev/hermes-skills
-hermes skills search <query> --source github
-hermes skills install wesleymatosdev/hermes-skills/skills/<category>/<skill>
-```
+## Recommended upstream collections
 
-## What's here
+Install third-party skills from their canonical repositories:
 
-~180 skills across categories: ce-* (Compound Engineering), cloudflare, creative,
-devops, email, github, media, mlops, note-taking, productivity, research,
-sandbox-*, security, smart-home, social-media, software-development, web, wrangler.
+- Hermes Agent built-in and optional skills: https://github.com/NousResearch/hermes-agent
+- Compound Engineering: https://github.com/EveryInc/compound-engineering-plugin
+- Cloudflare agent skills: https://github.com/cloudflare/skills
 
-Skills are plain SKILL.md + optional scripts/references — no code, no secrets.
-Security-scanned on install by Hermes' built-in skills guard.
+See `PROVENANCE_AUDIT.md` for the corrective audit of the removed import.
 
 ## License
 
-MIT
+Repository-authored documentation is MIT licensed. No license claim is made over linked third-party projects.
